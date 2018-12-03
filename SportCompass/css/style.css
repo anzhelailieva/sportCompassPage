@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato" sans-serif;
+}
+header {
+  height: 100%;
+}
+main {
+    height: 500px;
+}
+.jumbotron-fluid {
+  height: 500px !important;
+  background-image: url(../images/fitness.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.container-fluid {
+    height: 800px !important;
+}
+#hide-section {
+    display: none;
+}
+#button {
+    width: 100px !important;
+}
+h1 {
+  color: #ffffff;
+  margin-left: 2%;
+  margin-top: 5%;
+}
+.shop-item-image {
+  height: 150px !important;
+}
+.shop-item {
+    box-shadow:2px 2px 6px #333;
+}
+.underline {
+  width: 100px;
+  height: 2px;
+  background-color: grey;
+}
+.content-section {
+  margin: 1em;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+.section-header {
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  font-size: 1em;
+}
+.cart-column {
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 3.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 40%;
+}
+
+.cart-price {
+  width: 10%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #eb5757;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #cc4c4c;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56ccf2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 10px auto 10px auto;
+  font-size: 0.75em;
+}
+/* Footer */
+footer {
+    background: #191919;
+    height: 122px;
+  }
+  
+  .footer-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .footer-list {
+    margin-left:40%;
+    margin-top: 1%;
+  }
+  
+  .footer-list-item {
+    margin-left: 10px;
+    display: inline-block;
+  }
+  
+  .footer-item-link {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: #303030;
+    border-radius: 100%;
+    position: relative;
+  }
+  
+  .footer-item-link:hover {
+    background: #686868;
+    color: #000;
+  }
+  
+  .footer-item-link::before {
+    font-family: FontAwesome, sans-serif;
+    font-size: 1.3em;
+    color: #ffffff;
+    position: absolute;
+  }
+  
+  .facebook-link::before {
+    content: "\f09a";
+    top: 10px;
+    left: 14px;
+  }
+  
+  .twitter-link::before {
+    content: "\f099";
+    top: 10px;
+    left: 11px;
+  }
+  
+  .google-plus-link::before {
+    content: "\f0d5";
+    top: 9px;
+    left: 7px;
+  }
+  
+  .linkedin-link::before {
+    content: "\f0e1";
+    top: 8px;
+    left: 12px;
+  }
+  /* Responsive */
+  @media only screen and (max-width: 768px) {
+    .col-md-3 {
+        padding: 30px;
+        width: 250px;
+        display: flex;
+        margin: auto;
+    }
+    .h3 {
+        margin: auto;
+    }
+    .jumbotron-fluid {
+        max-width: 100%;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    footer {
+        margin: auto;
+    }
+    .footer-list {
+        margin-left: 25%;
+        margin-top: 3%;
+    }
+    .h3 {
+      margin: auto;
+  }
+  }
+  @media only screen and (max-width: 400px) {
+      footer {
+          margin: auto;
+      }
+      .footer-list {
+          margin-left: 15%;
+          margin-top: 3%;
+      }
+      .h3 {
+        margin: auto;
+    }
+    }
